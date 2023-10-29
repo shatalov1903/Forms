@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <form>
+      <label class="field">
+        <span class="field__text">Label <span class="field__req">*</span></span>
+        <input
+          class="field__input"
+          required
+          type="text"
+          placeholder="Enter your name"
+        />
+      </label>
+      <label class="field">
+        <span class="field__text">Textarea</span>
+        <div class="field__counter-box">
+          <textarea
+            class="field__textarea"
+            maxlength="360"
+            placeholder="Enter your text"
+          ></textarea>
+          <span class="field__counter-text">
+            <span class="counter-text__current">0</span>
+            /
+            <span class="counter-text__total">360</span>
+          </span>
+        </div>
+      </label>
+      <label class="field">
+        <span class="field__text">Select</span>
+        <select class="field__select">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </label>
+      <label class="field">
+        <span class="field__text">Select</span>
+        <select class="field__select">
+          <option value="beer">Beer</option>
+          <option value="whiskey">Whiskey</option>
+          <option value="wine">Wine</option>
+          <option value="vodka">Vodka</option>
+        </select>
+      </label>
+      <div class="row">
+        <label class="chk">
+          <input class="chk__input" type="checkbox" />
+          <span class="chk__check"></span>
+          <span class="chk__text">Item</span>
+        </label>
+        <label class="chk is-disabled">
+          <input class="chk__input" type="checkbox" />
+          <span class="chk__check"></span>
+          <span class="chk__text">Item</span>
+        </label>
+        <label class="radio">
+          <input class="radio__input" name="user" type="radio" />
+          <span class="radio__check"></span>
+          <span class="radio__text">Yes</span>
+        </label>
+        <label class="radio">
+          <input class="radio__input" name="user" type="radio" />
+          <span class="radio__check"></span>
+          <span class="radio__text">No</span>
+        </label>
+        <label class="switch">
+          <span class="switch__text">Off</span>
+          <div class="switch__body">
+            <input class="switch__input" type="checkbox" />
+            <span class="switch__check"></span>
+          </div>
+          <span class="switch__text">On</span>
+        </label>
+      </div>
+      <button class="btn">Send</button>
+    </form>
+  </body>
+</html>
