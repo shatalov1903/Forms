@@ -92,8 +92,8 @@ body {
 
 .field__counter-text {
   position: absolute;
-  right: 15px;
-  bottom: 10px;
+  right: 12px;
+  bottom: 12px;
   color: #6f7482;
   text-align: right;
   font-size: 16px;
@@ -193,8 +193,8 @@ body {
 }
 
 .radio__check {
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   border: 2px solid #3b4256;
   border-radius: 50%;
   background: transparent;
