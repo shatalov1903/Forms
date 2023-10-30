@@ -236,24 +236,16 @@ body {
   pointer-events: none;
 }
 
-.switch__body {
-  display: inline-block;
-  position: relative;
-  width: 51px;
-  height: 30px;
-}
-
 .switch__input {
   display: none;
 }
 
 .switch__check {
-  position: absolute;
+  display: inline-block;
+  position: relative;
+  width: 51px;
+  height: 30px;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   border-radius: 30px;
   background: #e2e7ed;
   transition: 0.2s all ease-in;
@@ -262,7 +254,6 @@ body {
 .switch__check::before {
   content: "";
   position: absolute;
-  cursor: pointer;
   left: 2px;
   bottom: 2px;
   width: 26px;
